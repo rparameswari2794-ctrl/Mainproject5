@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/css.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid p-0 m-0">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a> </li>
+                    <li class="nav-item"><a class="nav-link active" href="reservation.html">Reservation</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="help.html">Help</a> </li>
+                </ul>
+            </div>
+            <div class="collap">
+                <a href="#" class="navbar-brand"><img src="image/logo.png" width="170"></a>
+                <div class="searchbox"><input type="search" id="search" placeholder="Search"><i
+                        class="fa-solid fa-magnifying-glass"></i> </div>
+                <button id="reg-btn" type="button" onclick="openModal()">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay" id="formModal">
+        <div class="modal-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <div class="card5">
+                            <div class="modal-header">
+                                <h3>Register Free!</h3><span class="close-btn" onclick="closeModal()"><i
+                                        class="fa-solid fa-close"></i> </span>
+                            </div>
+                            <div class="modal-content">
+                                <input type="email" id="email" placeholder="Enter Your E-mail">
+                                <input type="password" id="password" placeholder="Password">
+                                <div class="login">
+                                    <button type="button" id="btn" onclick="goHome()">Login</button>
+                                    <p style="font-size: 12px;">Forget Your Password?</p>
+                                </div>
+                                <p class="sign">Sign Up Using</p>
+                                <img src="image/reg-img.png" class="reg-img">
+                                <p class="p1">Don't have an account? <button class="btn"
+                                        onclick="openSignModal()">Create New
+                                        Account</button> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <img src="image/reg-img-1.png" class="reg-img1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="signModal">
+        <div class="modal-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <img src="image/Frame 30679.png" class="reg-img2">
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="card6">
+                            <div class="modal-header">
+                                <h3>Sign Up</h3><span class="close-btn" onclick="closeModal()"><i
+                                        class="fa-solid fa-close"></i> </span>
+                            </div>
+                            <div class="modal-content">
+                                <input type="name" id="name" placeholder="Enter Your Full Name">
+                                <input type="email" id="email" placeholder="Email">
+                                <input type="password" id="password" placeholder="Password">
+                                <button type="button" id="sign-btn" onclick="goHome()">Sign Up</button>
+                                <p class="p1">Already have an account? <button class="btn" onclick="openModal()">Log
+                                        in</button> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card-container1">
+                    <img src="image/Frame 30679.png" class="card-imgres">
+                    <div class="card-bodyres">
+                        <div class="card-h4">
+                            <h4>Grand Buffet</h4>
+                            <i class="fa-regular fa-heart" id="heartfill" onclick="fill(this)"></i>
+                        </div>
+                        <p>Upper Ground Floor, East Court, Phoenix Market City, Egmore, Chennai</p>
+                        <div class="sub-body">
+                            <p>North Indian, Mohali, Italian, BBQ</p>
+                            <p>Cost for Two : Rs.1000</p>
+                            <div class="sub-body1">
+                                <p class="rupee"></p>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="tabs">
+
+                    <button class="tab active" onclick="showoverView()">Overview Restaurent</button>
+                    <button class="tab" onclick="showMenu()">Menu Card</button>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div id="overviewSection" class="content-section show">
+                    <div class="over-card">
+                        <h4>Grand Buffet Overview</h4>
+                        <h6>Phone Number</h6>
+                        <p>9876374859</p>
+                        <h6>Cuisines</h6>
+                        <p>North Indian, Mohali, Italian, BBQ</p>
+                        <h6>Average Cost</h6>
+                        <p>Rs.1000 for Two People(approax.)</p>
+                        <h6>Famous for</h6>
+                        <p>Decor, Live Music, Live Grill, Mutton Roganjosh, Naan, Dahi, Salads, Kulfi, Chicken Tikka</p>
+                    </div>
+                    <div class="over-card1">
+                        <h6>Opening Hours</h6>
+                        <p><i class="fa-regular fa-clock"></i> 12noon - 3pm, 7pm - 11pm</p>
+                        <h6>Address</h6>
+                        <p>Upper Ground Floor, East Court, Phoenix Market City, Egmore, Chennai - 623088.</p>
+                        <img src="image/resmap.png" width="400"><br>
+                        <button class="resnow-btn" onclick="showAlert()">Reserve Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div id="menuSection" class="content-section">
+                    <div class="menu-card">
+                        <h4>Our Menu Card</h4>
+                        <div class="menu-list">
+                            <button class="menu-btn">Starters</button><button class="menu-btn">Main
+                                Course</button><button class="menu-btn" id="menu-de"
+                                onclick="menuList()">Desserts</button><button class="menu-btn">Beverages </button>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12 col-md-12 p-0">
+                            <div class="card-show" id="cardShow">
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/panna.png">
+                                        <div class="menucardlist">
+                                            <h6>Panno Catto <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="showAlert()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/brownie.png">
+                                        <div class="menucardlist">
+                                            <h6>Brownie Ice <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.280</p>
+                                            <button id="menucard-btn" onclick="showAlert()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/cheesecake.png">
+                                        <div class="menucardlist">
+                                            <h6>Cheese Cake <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.280</p>
+                                            <button id="menucard-btn" onclick="showAlert()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/pie.png">
+                                        <div class="menucardlist">
+                                            <h6>Apple Pie <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="showAlert()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/gulabjamun.png">
+                                        <div class="menucardlist">
+                                            <h6>Gulab Jamun <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="showAlert()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/bruel.png">
+                                        <div class="menucardlist">
+                                            <h6>Creme Bruele <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="showAlert()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="showMsg">
+            <p>First Register Your Details Now.</p>
+        </div>
+
+
+
+
+        <footer>
+            <div class="container-fluid p-0">
+                <div class="row ps-5 ms-5 pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Company</h4>
+                        <p>About Us</p>
+                        <p>Contact Us</p>
+                        <p>Customer Reviews</p>
+                        <p>Add Your Restaurent</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Policy Info</h4>
+                        <p>Terms & Conditions</p>
+                        <p>Cookies Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Cities</h4>
+                        <p>Chennai</p>
+                        <p>Bangalore</p>
+                        <p>Hyderabad</p>
+                        <p>Mumbai</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Help</h4>
+                        <p>Booking Status</p>
+                        <p>Add Restaurent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-5 mt-4 " id="foot2">
+                <div class="row ps-5 ms-5 pt-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <p>Restaurent in Chennai</p>
+                            <p>Restaurent in Pune</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <p>Restaurent in Bangalore</p>
+                            <p>Restaurent in Kolkata</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card">
+                            <p>Restaurent in Hyderabad</p>
+                            <p>Restaurent in Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-0" id="foot3">
+                <div class="row ps-5 ms-5 pt-5">
+                    <div class="col-lg-9 col-md-8 col-sm-12">
+                        <div class="card1">
+                            <p>&copy; 2025 Book My Table.Co.in.All rights reserved.</p>
+                            <br>
+                            <p><img src="image/footer-logo.png" class="footer-img" width="150"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card2">
+                            <p>(123) 8940-985498</p>
+                            <p>Info@Bookmytable.com</p>
+                            <p>Chennai 54375387</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function openModal() {
+                document.getElementById("formModal").style.display = "flex";
+                document.getElementById("signModal").style.display = "none";
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeModal() {
+                document.getElementById("formModal").style.display = "none";
+                document.getElementById("signModal").style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+            function openSignModal() {
+                document.getElementById("formModal").style.display = "none"; // CLOSE register
+                document.getElementById("signModal").style.display = "flex"; // OPEN signup
+                document.body.style.overflow = "hidden";
+            }
+
+
+            function goHome() {
+                window.location.href = "home1.html";
+            }
+            function fill(heart) {
+                document.getElementById("heartfill")
+                heart.classList.toggle("fa-regular");
+                heart.classList.toggle("fa-solid");
+                heart.classList.toggle("active");
+            };
+            function goToPage() {
+                window.location.href = "reserve1.html";
+            }
+            function showAlert() {
+                document.getElementById("showMsg").style.display = "flex";
+                setTimeout(function () {
+                    window.location.href = "home.html";
+                }, 1000);
+
+            }
+            function showoverView() {
+                document.getElementById("menuSection").style.display = "none";
+                document.getElementById("overviewSection").style.display = "flex";
+                document.getElementById("cardShow").style.display = "none";
+                document.querySelectorAll(".tab")[0].classList.add("active");
+                document.querySelectorAll(".tab")[1].classList.remove("active");
+            }
+
+            function showMenu() {
+                document.getElementById("overviewSection").style.display = "none";
+                document.getElementById("menuSection").style.display = "flex";
+                document.querySelectorAll(".tab")[1].classList.add("active");
+                document.querySelectorAll(".tab")[0].classList.remove("active");
+                document.getElementById("cardShow").style.display = "none";
+            }
+            function menuList() {
+                document.getElementById("cardShow").style.display = "flex";
+                document.getElementById("menu-de").style.backgroundColor = "#B89b5e";
+                document.getElementById("menu-de").style.color = "white";
+            }
+      
+        </script>
+</body>
+
+</html>

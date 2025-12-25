@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/cssa.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid p-0 m-0">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home1.html">Home</a> </li>
+                    <li class="nav-item"><a class="nav-link active" href="reservation1.html">Reservation</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="blog1.html">Blog</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="about1.html">About Us</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="contact1.html">Contact Us</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="help1.html">Help</a> </li>
+                </ul>
+            </div>
+            <div class="collap">
+                <a href="#" class="navbar-brand"><img src="image/logo.png" width="170"></a>
+                <div class="searchbox"><input type="search" id="search" placeholder="Search"><i
+                        class="fa-solid fa-magnifying-glass"></i> </div>
+                <div class="pro"><i class="fa-regular fa-bell" id="bell"></i><i class="fa-solid fa-headphones" id="head"
+                        onclick="openPage()"></i><i class="fa-regular fa-heart" id="heart" onclick="openWish()"></i>
+                    <img src="image/profile.png" class="profile" id="profile" onclick="openPopup()">
+                </div>
+                <div id="openPopup" class="openpopup">
+                    <div class="popup-box1">
+                        <button id="closePage" onclick="closePage()">Log Out</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <img src="image/reserv.png" width="100%" style="height:400px;">
+            </div>
+        </div>
+    </div>
+    <section id="section-re">
+        <h3 style="text-align: center;margin:30px 0;font-weight: bold;">Perfect Buffet Restaurent in Chennai</h3>
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card-container" onclick="goToPage()">
+                        <img src="image/Frame 30679.png" class="card-imgres">
+                        <div class="card-bodyres">
+                            <div class="card-h4">
+                                <h4>Grand Buffet</h4>
+                                <i class="fa-regular fa-heart" id="heartfill" onclick="fill(this)"></i>
+                            </div>
+                            <p>Egmore</p>
+                            <div class="sub-body">
+                                <p>North Indian, Mohali, Italian, BBQ</p>
+                                <p>Cost for Two :</p>
+                                <div class="sub-body1">
+                                    <p class="rupee">Rs.1000</p>
+                                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card-container">
+                        <img src="image/res1.png" class="card-imgres">
+                        <div class="card-bodyres">
+                            <div class="card-h4">
+                                <h4>Spice Chicken</h4>
+                                <i class="fa-regular fa-heart" id="heartfill" onclick="fill(this)"></i>
+                            </div>
+                            <p>Ramapuram</p>
+                            <div class="sub-body">
+                                <p>North Indian, Chinese, BBQ</p>
+                                <p>Cost for Two :</p>
+                                <div class="sub-body1">
+                                    <p class="rupee">Rs.1000</p>
+                                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card-container">
+                        <img src="image/reserv.png" class="card-imgres">
+                        <div class="card-bodyres">
+                            <div class="card-h4">
+                                <h4>Cigree</h4>
+                                <i class="fa-regular fa-heart" id="heartfill" onclick="fill(this)"></i>
+                            </div>
+                            <p>VadaPalani</p>
+                            <div class="sub-body">
+                                <p>Chinese, BBQ, Italian</p>
+                                <p>Cost for Two :</p>
+                                <div class="sub-body1">
+                                    <p class="rupee">Rs.1000</p>
+                                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card-container">
+                        <img src="image/res2.png" class="card-imgres">
+                        <div class="card-bodyres">
+                            <div class="card-h4">
+                                <h4>Taste of Punjab</h4>
+                                <i class="fa-regular fa-heart" id="heartfill" onclick="fill(this)"></i>
+                            </div>
+                            <p>Anna Nagar</p>
+                            <div class="sub-body">
+                                <p>North Indian, Chinese, BBQ</p>
+                                <p>Cost for Two :</p>
+                                <div class="sub-body1">
+                                    <p class="rupee">Rs.1000</p>
+                                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row ps-5 ms-5 pt-5">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4>Company</h4>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Customer Reviews</p>
+                    <p>Add Your Restaurent</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4>Policy Info</h4>
+                    <p>Terms & Conditions</p>
+                    <p>Cookies Policy</p>
+                    <p>Cancellation Policy</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4>Cities</h4>
+                    <p>Chennai</p>
+                    <p>Bangalore</p>
+                    <p>Hyderabad</p>
+                    <p>Mumbai</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4>Help</h4>
+                    <p>Booking Status</p>
+                    <p>Add Restaurent</p>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-5 mt-4 " id="foot2">
+            <div class="row ps-5 ms-5 pt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <p>Restaurent in Chennai</p>
+                        <p>Restaurent in Pune</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <p>Restaurent in Bangalore</p>
+                        <p>Restaurent in Kolkata</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="card">
+                        <p>Restaurent in Hyderabad</p>
+                        <p>Restaurent in Mumbai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0" id="foot3">
+            <div class="row ps-5 ms-5 pt-5">
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="card1">
+                        <p>&copy; 2025 Book My Table.Co.in.All rights reserved.</p>
+                        <br>
+                        <p><img src="image/footer-logo.png" class="footer-img" width="150"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card2">
+                        <p>(123) 8940-985498</p>
+                        <p>Info@Bookmytable.com</p>
+                        <p>Chennai 54375387</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openPage() {
+            window.location.href = "contact1.html";
+
+        }
+        function closePage() {
+            window.location.href = "home.html";
+        }
+        function openPopup() {
+            document.getElementById("openPopup").style.display = "flex";
+        }
+        function fill(heart) {
+            document.getElementById("heartfill")
+            heart.classList.toggle("fa-regular");
+            heart.classList.toggle("fa-solid");
+            heart.classList.toggle("active");
+        };
+        function goToPage() {
+            window.location.href = "reservea1.html";
+        }
+         function openWish() {
+                window.location.href = "wishlist.html";
+            }
+
+    </script>
+</body>
+
+</html>

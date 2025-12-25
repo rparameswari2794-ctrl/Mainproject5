@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/cssa.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid p-0 m-0">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="home1.html">Home</a> </li>
+                <li class="nav-item"><a class="nav-link" href="reservation1.html">Reservation</a> </li>
+                <li class="nav-item"><a class="nav-link" href="blog1.html">Blog</a> </li>
+                <li class="nav-item"><a class="nav-link" href="about1.html">About Us</a> </li>
+                <li class="nav-item"><a class="nav-link" href="contact1.html">Contact Us</a> </li>
+                <li class="nav-item"><a class="nav-link" href="help1.html">Help</a> </li>
+            </ul></div>
+            <div class="collap">
+            <a href="#" class="navbar-brand"><img src="image/logo.png" width="170"></a>
+            <div class="searchbox"><input type="search" id="search" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i> </div>
+            <div class="pro"><i class="fa-regular fa-bell" id="bell"></i><i class="fa-solid fa-headphones" id="head" onclick="openPage()"></i><i class="fa-regular fa-heart" id="heart" onclick="openWish()"></i>
+            <img src="image/profile.png" class="profile"  id="profile" onclick="openPopup()"></div>
+        </div>
+        <div id="openPopup" class="openpopup">
+                    <div class="popup-box1">
+                        <button id="closePage" onclick="closePage()">Log Out</a></button>
+                    </div>
+    </div>
+</nav>
+<div class="container-fluid p-0">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="image/home.png" class="home-img">
+        </div>
+    </div>
+</div>
+    <h3 style="margin: 60px 0;text-align: center;font-weight: bold;">Explore Resturent Your City</h3>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="scroll-container">
+                    <div class="scroll-images">
+                        <figure><img src="image/Bangalore.png"><figcaption><p>Bangalore</p></figcaption></figure>
+                        <figure><img src="image/mumbai.png"><figcaption><p>Mumbai</p></figcaption></figure>
+                        <figure><img src="image/hyderabad.jpg"><figcaption><p>Hyderabad</p></figcaption></figure>
+                        <figure><img src="image/Kolkata.png"><figcaption><p>Kolkata</p></figcaption></figure>
+                        <figure><img src="image/bangalore1.jfif"><figcaption><p>Pune</p></figcaption></figure>
+                        <figure><img src="image/chenn.jpg"><figcaption><p>Chennai</p></figcaption></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<section id="section1">
+    <h4 style="font-weight: bold; margin: 50px 0;text-align: center;">How It Works</h4>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card3">
+                    <img src="image/searchimg.png" class="card3-img">
+                    <p>Search Restaurant</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card3">
+                    <img src="image/date-img.png" class="card3-img">
+                    <p>Select Date/Time</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card3">
+                    <img src="image/table-img.png" class="card3-img">
+                    <p>Reserve Your Table</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card3">
+                    <img src="image/serving.png" class="card3-img">
+                    <p>Get Served Instantly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <img src="image/Frame 429.png" class="table-img" width="100%">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0"  id="div1">
+        <div class="row ms-5 ps-5 pt-5 pb-5">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card4">
+                    <img src="image/Photo by Patrick T'Kindt.png" class="card4-img" width="60">
+                    <p>Aman P.</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    <p style="font-size: 12px;font-weight: bold;">Great and excellent service</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card4">
+                    <img src="image/Photo by Lesly Juarez.png" class="card4-img" width="60">
+                    <p>David.P</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    <p style="font-size: 12px;font-weight: bold;">Great and excellent service</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card4">
+                    <img src="image/Photo by H Liu.png" class="card4-img" width="60">
+                    <p>Gopi.P</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    <p style="font-size: 12px;font-weight: bold;">Flexible Service</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid p-0">
+    <div class="row mb-2">
+        <div class="col-lg-5 col-md-5 col-sm-12">
+            <img src="image/home-map.png" width="100%" class="map-img">
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-12">
+            <img src="image/home-map2.png" width="100%" class="map-img1">
+        </div>
+    </div>
+   </div>
+</section>
+
+<footer>
+    <div class="container-fluid p-0">
+        <div class="row ps-5 ms-5 pt-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h4>Company</h4>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Customer Reviews</p>
+                <p>Add Your Restaurent</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h4>Policy Info</h4>
+                <p>Terms & Conditions</p>
+                <p>Cookies Policy</p>
+                <p>Cancellation Policy</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h4>Cities</h4>
+                <p>Chennai</p>
+                <p>Bangalore</p>
+                <p>Hyderabad</p>
+                <p>Mumbai</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h4>Help</h4>
+                <p>Booking Status</p>
+                <p>Add Restaurent</p>
+            </div>
+        </div>
+    </div>
+    <div class="container pb-5 mt-4 " id="foot2">
+        <div class="row ps-5 ms-5 pt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <p>Restaurent in Chennai</p>
+                    <p>Restaurent in Pune</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <p>Restaurent in Bangalore</p>
+                    <p>Restaurent in Kolkata</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <p>Restaurent in Hyderabad</p>
+                    <p>Restaurent in Mumbai</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid p-0" id="foot3">
+    <div class="row ps-5 ms-5 pt-5">
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <div class="card1">
+                <p>&copy; 2025 Book My Table.Co.in.All rights reserved.</p>
+                <br>
+                <p><img src="image/footer-logo.png" class="footer-img" width="150"></p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card2">
+                <p>(123) 8940-985498</p>
+                <p>Info@Bookmytable.com</p>
+                <p>Chennai 54375387</p>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+        function openPage() {
+            window.location.href="contact1.html";
+    
+        }
+        function closePage(){
+            window.location.href="home.html";
+        }
+        function openPopup(){
+            document.getElementById("openPopup").style.display="flex";
+        }
+         function openWish() {
+                window.location.href = "wishlist.html";
+            }
+
+    </script>
+</body>
+</html>

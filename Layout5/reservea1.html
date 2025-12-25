@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/cssa.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid p-0 m-0">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home1.html">Home</a> </li>
+                    <li class="nav-item"><a class="nav-link active" href="reservation1.html">Reservation</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="blog1.html">Blog</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="about1.html">About Us</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="contact1.html">Contact Us</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="help1.html">Help</a> </li>
+                </ul>
+            </div>
+            <div class="collap">
+                <a href="#" class="navbar-brand"><img src="image/logo.png" width="170"></a>
+                <div class="searchbox"><input type="search" id="search" placeholder="Search"><i
+                        class="fa-solid fa-magnifying-glass"></i> </div>
+                <div class="pro"><i class="fa-regular fa-bell" id="bell"></i><i class="fa-solid fa-headphones" id="head"
+                        onclick="openPage()"></i><i class="fa-regular fa-heart" id="heart" onclick="openWish()"></i>
+                    <img src="image/profile.png" class="profile" id="profile" onclick="openPopup()">
+                </div>
+                <div id="openPopup" class="openpopup">
+                    <div class="popup-box1">
+                        <button id="closePage" onclick="closePage()">Log Out</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card-container1">
+                    <img src="image/Frame 30679.png" class="card-imgres">
+                    <div class="card-bodyres">
+                        <div class="card-h4">
+                            <h4>Grand Buffet</h4>
+                            <i class="fa-regular fa-heart" id="heartfill" onclick="fill(this)"></i>
+                        </div>
+                        <p>Upper Ground Floor, East Court, Phoenix Market City, Egmore, Chennai</p>
+                        <div class="sub-body">
+                            <p>North Indian, Mohali, Italian, BBQ</p>
+                            <p>Cost for Two : Rs.1000</p>
+                            <div class="sub-body1">
+                                <p class="rupee"></p>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="tabs">
+
+                    <button class="tab active" onclick="showoverView()">Overview Restaurent</button>
+                    <button class="tab" onclick="showMenu()">Menu Card</button>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div id="overviewSection" class="content-section show">
+                    <div class="over-card">
+                        <h4>Grand Buffet Overview</h4>
+                        <h6>Phone Number</h6>
+                        <p>9876374859</p>
+                        <h6>Cuisines</h6>
+                        <p>North Indian, Mohali, Italian, BBQ</p>
+                        <h6>Average Cost</h6>
+                        <p>Rs.1000 for Two People(approax.)</p>
+                        <h6>Famous for</h6>
+                        <p>Decor, Live Music, Live Grill, Mutton Roganjosh, Naan, Dahi, Salads, Kulfi, Chicken Tikka</p>
+                    </div>
+                    <div class="over-card1">
+                        <h6>Opening Hours</h6>
+                        <p><i class="fa-regular fa-clock"></i> 12noon - 3pm, 7pm - 11pm</p>
+                        <h6>Address</h6>
+                        <p>Upper Ground Floor, East Court, Phoenix Market City, Egmore, Chennai - 623088.</p>
+                        <img src="image/resmap.png" width="400"><br>
+                        <button class="resnow-btn" onclick="goToPage1()">Reserve Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div id="menuSection" class="content-section">
+                    <div class="menu-card">
+                        <h4>Our Menu Card</h4>
+                        <div class="menu-list">
+                            <button class="menu-btn">Starters</button><button class="menu-btn">Main
+                                Course</button><button class="menu-btn" id="menu-de"
+                                onclick="menuList()">Desserts</button><button class="menu-btn">Beverages </button>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12 col-md-12 p-0">
+                            <div class="card-show" id="cardShow">
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/panna.png">
+                                        <div class="menucardlist">
+                                            <h6>Panno Catto <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="goToPage()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/brownie.png">
+                                        <div class="menucardlist">
+                                            <h6>Brownie Ice <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.280</p>
+                                            <button id="menucard-btn" onclick="goToPage()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/cheesecake.png">
+                                        <div class="menucardlist">
+                                            <h6>Cheese Cake <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.280</p>
+                                            <button id="menucard-btn" onclick="goToPage()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/pie.png">
+                                        <div class="menucardlist">
+                                            <h6>Apple Pie <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="goToPage()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/gulabjamun.png">
+                                        <div class="menucardlist">
+                                            <h6>Gulab Jamun <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="goToPage()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="menu-cardlist">
+                                        <img src="image/bruel.png">
+                                        <div class="menucardlist">
+                                            <h6>Creme Bruele <i class="fa-regular fa-heart"
+                                                    style="margin-left: 50px;color:#B89b5e;" id="heartfill"
+                                                    onclick="fill(this)"></i>
+                                            </h6>
+                                            <p>Rs.240</p>
+                                            <button id="menucard-btn" onclick="goToPage()">Add Item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-fluid p-0">
+                <div class="row ps-5 ms-5 pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Company</h4>
+                        <p>About Us</p>
+                        <p>Contact Us</p>
+                        <p>Customer Reviews</p>
+                        <p>Add Your Restaurent</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Policy Info</h4>
+                        <p>Terms & Conditions</p>
+                        <p>Cookies Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Cities</h4>
+                        <p>Chennai</p>
+                        <p>Bangalore</p>
+                        <p>Hyderabad</p>
+                        <p>Mumbai</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Help</h4>
+                        <p>Booking Status</p>
+                        <p>Add Restaurent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-5 mt-4 " id="foot2">
+                <div class="row ps-5 ms-5 pt-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <p>Restaurent in Chennai</p>
+                            <p>Restaurent in Pune</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <p>Restaurent in Bangalore</p>
+                            <p>Restaurent in Kolkata</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card">
+                            <p>Restaurent in Hyderabad</p>
+                            <p>Restaurent in Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-0" id="foot3">
+                <div class="row ps-5 ms-5 pt-5">
+                    <div class="col-lg-9 col-md-8 col-sm-12">
+                        <div class="card1">
+                            <p>&copy; 2025 Book My Table.Co.in.All rights reserved.</p>
+                            <br>
+                            <p><img src="image/footer-logo.png" class="footer-img" width="150"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card2">
+                            <p>(123) 8940-985498</p>
+                            <p>Info@Bookmytable.com</p>
+                            <p>Chennai 54375387</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function openPage() {
+                window.location.href = "contact1.html";
+
+            }
+            function closePage() {
+                window.location.href = "home.html";
+            }
+            function openPopup() {
+                document.getElementById("openPopup").style.display = "flex";
+            }
+            function fill(heart) {
+                document.getElementById("heartfill")
+                heart.classList.toggle("fa-regular");
+                heart.classList.toggle("fa-solid");
+                heart.classList.toggle("active");
+            }
+            document.addEventListener("DOMContentLoaded", function () {
+
+    const menuSection = document.getElementById("menuSection");
+    const overviewSection = document.getElementById("overviewSection");
+    const cardShow = document.getElementById("cardShow");
+    const tabs = document.querySelectorAll(".tab");
+    const menuDe = document.getElementById("menu-de");
+
+            window.showoverView = function () {
+        menuSection.style.display = "none";
+        overviewSection.style.display = "flex";
+        cardShow.style.display = "none";
+
+        tabs[0].classList.add("active");
+        tabs[1].classList.remove("active");
+    };
+
+    // ---- MENU TAB ----
+    window.showMenu = function () {
+        overviewSection.style.display = "none";
+        menuSection.style.display = "flex";
+        cardShow.style.display = "none";
+
+        tabs[1].classList.add("active");
+        tabs[0].classList.remove("active");
+    };
+
+    // ---- DESSERTS LIST ----
+    window.menuList = function () {
+        cardShow.style.display = "flex";
+
+        // reset menu buttons
+        document.querySelectorAll(".menu-btn").forEach(btn => {
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
+        });
+
+        // activate desserts
+        menuDe.style.backgroundColor = "#B89b5e";
+        menuDe.style.color = "white";
+    };
+
+    // ---- NAVIGATION ----
+    window.goToPage = function () {
+        window.location.href = "wishlist.html";
+    };
+
+    window.goToPage1 = function () {
+        window.location.href = "reservea2.html";
+    };
+
+    window.openWish = function () {
+        window.location.href = "wishlist.html";
+    };
+
+    // ---- AUTO OPEN FROM WISHLIST ----
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("tab") === "desserts") {
+        showMenu();     // switch to menu tab
+        menuList();     // open desserts
+    }
+
+});
+
+        </script>
+</body>
+
+</html>
